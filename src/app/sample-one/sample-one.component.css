@@ -1,0 +1,42 @@
+.component-one {
+	margin: 20px;
+	background: #eee;
+	padding: 20px;
+	width: 200px;
+	height: 200px;
+	border-radius: 5px;
+	cursor: default;
+}
+
+.component-one:hover {
+	box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+.component-one-title {
+	display: block;
+	font-size: 20px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.button-container {
+	text-align: center;
+}
+
+.button-container div {
+	padding: 20px;
+}
+
+.component-one-button {
+	background-color: #0199d9;
+	width: auto;
+	height: 30px;
+	line-height: 30px;
+	padding: 5px 14px;
+	border-radius: 2px;
+	color: white;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
