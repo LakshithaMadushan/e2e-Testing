@@ -1,0 +1,11 @@
+<div class="component-form">
+  <h3 class="component-form-title">sample-form works!</h3>
+  <div class="button-container">
+    <div>
+        <input id="nameInput" type="text" placeholder="Your Name" [(ngModel)]="inputValue" required>
+        <span class="bar"></span>
+    </div>
+    <a (click)="clickSubmit()" class="component-form-button"> Submit </a>
+    <p *ngIf="inputValue"> {{inputValue}} </p>
+  </div>
+</div>

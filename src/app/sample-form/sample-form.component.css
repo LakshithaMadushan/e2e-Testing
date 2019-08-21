@@ -1,0 +1,91 @@
+.component-form {
+	margin: 20px;
+	background: #eee;
+	padding: 20px;
+	width: 200px;
+	height: 200px;
+	border-radius: 5px;
+	cursor: default;
+}
+
+.component-form:hover {
+	box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+.component-form-title {
+	display: block;
+	font-size: 20px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.button-container {
+	text-align: center;
+}
+
+.button-container div {
+	padding: 20px;
+}
+
+.button-container input {
+	width: 150px;
+	font-size: 15px;
+	padding: 5px 5px 5px 5px;
+	border: none;
+	border-bottom: 1px solid #0199d9;
+	border-radius: 3px;
+}
+
+.button-container input:focus {
+	outline: none;
+}
+
+.component-form-button {
+	background-color: #0199d9;
+	width: auto;
+	height: 30px;
+	line-height: 30px;
+	padding: 5px 14px;
+	border-radius: 2px;
+	color: white;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.bar {
+	position: relative;
+	display: block;
+	width: 160px;
+}
+.bar:before,
+.bar:after {
+	content: '';
+	height: 1px;
+	width: 0;
+	bottom: 1px;
+	position: absolute;
+	background: #0199d9;
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
+}
+.bar:before {
+	left: 50%;
+}
+.bar:after {
+	right: 50%;
+}
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+	width: 50%;
+}
+
+::placeholder {
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 2px;
+	opacity: 0.5;
+}
